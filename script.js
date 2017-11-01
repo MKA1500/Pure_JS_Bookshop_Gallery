@@ -32,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    function hideArrayItems() {
+        while(ResultsDiv.hasChildNodes()) {
+            ResultsDiv.removeChild(ResultsDiv.lastChild);
+        }
+    }
+
     function addItemToExistingList() {
         ar1[arrayLength] = document.getElementById("textValue").value;
         arrayLength++;
@@ -48,5 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var addToArray = document.getElementById("addToArray");
     addToArray.addEventListener("click", addItemToExistingList);
+
+    var hideArrayItemsButton = document.getElementById("hideArrayItemsButton");
+    hideArrayItemsButton.addEventListener("click", hideArrayItems);
 
 }, false);
