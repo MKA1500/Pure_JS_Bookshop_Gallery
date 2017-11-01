@@ -24,6 +24,16 @@ main {
     padding: 15px 0px;
 }
 
+.row {
+    margin-top: 15px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #a4a4a4;
+}
+
 .btn {
     background-color: #00566a;
     border-color: #00566a;
@@ -42,9 +52,11 @@ main {
     padding: 15px 10px;
     text-align: center;
     margin: 5px 0px;
-    border: 1px solid #00566a;
-    border-radius: 5px;
-    width: 190px;
+    border: 1px solid #eee;
+    width: 25%;
+    display: inline-block;
+    height: 68px;
+    vertical-align: middle;
 }
 
 footer {
