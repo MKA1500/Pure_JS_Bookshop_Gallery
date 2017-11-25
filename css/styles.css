@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    background-color: rgb(255, 252, 201);
+    box-sizing: border-box;
+    color: #333;
+}
+
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookshop-header {
+    order: 0;
+    height: 104px;
+    width: 100%;
+    border-bottom: 1px dashed rgb(191, 147, 141);
+}
+
+.bookshop-header .header-wrap {
+    max-width: 550px;
+    margin: 0 auto;
+    width: 100%;
+    height: 104px;
+    position: relative;
+}
+
+.bookshop-header span {
+    background-color: #FFAE6E;
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 16px;
+    left: 9px;
+}
+
+.bookshop-header h1 {
+    font-size: 26px;
+    position: absolute;
+    z-index: 1500;
+    margin: 0;
+    top: 37px;
+    left: 39px;
+}
+
+.bookshop-navig-aside {
+    order: 1;
+    height: 380px;
+    width: 100%;
+    padding: 23px 32px 10px 32px;
+    max-width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.bookshop-navig-aside h2 {
+    font-size: 22px;
+}
+
+.bookshop-navig-aside ul {
+    padding: 0px 0px 23px 0px;
+    margin-top: 22px;
+    border-bottom: 1px solid rgb(191, 147, 141);
+}
+
+.bookshop-navig-aside ul li {
+    list-style: none;
+    font-size: 15px;
+    position: relative;
+}
+
+.bookshop-navig-aside ul li .pseudo-radio {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(191, 147, 141);
+    border-radius: 100%;
+    content: " ";
+    margin: 2px 2px 0px 2px;
+    background-color: #FFF;
+}
+
+.bookshop-navig-aside ul li input[type='radio'] {
+    opacity: 0;
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(191, 147, 141);
+}
+
+.bookshop-navig-aside ul li input[type='radio']:checked {
+    opacity: 1;
+}
+
+.bookshop-navig-aside ul li .navig-label {
+    line-height: 18px;
+    vertical-align: 3px;
+}
+
+.bookshop-navig-aside .select-pages {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(191, 147, 141);
+}
+
+.bookshop-navig-aside .select-pages #input-pages {
+    border: none;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 10px;
+    padding: 0px 5px;
+}
+
+.bookshop-navig-aside .select-pages #alert {
+    color: #d90000;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.bookshop-navig-aside .for-cleaning-filters {
+    width: 100%;
+    height: 85px;
+    text-align: center;
+}
+
+.bookshop-navig-aside .for-cleaning-filters button {
+    width: auto;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    background-color: #FFAE6E;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.bookshop-navig-aside .select-pages #clean-filters:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+#bookshop-main-content {
+    order: 2;
+    padding: 0px;
+    width: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#bookshop-main-content .item {
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding-top: 20px;
+}
+
+#bookshop-main-content .item .item-number {
+    float: left;
+    font-size: 50px;
+    color: rgb(191, 147, 141);
+    margin: 0px 0px 0px 10px;
+    font-weight: bold;
+}
+
+#bookshop-main-content .item .small-image {
+    width: 180px;
+    height: auto;
+    margin-left: 60px;
+    display: block;
+    cursor: pointer;
+}
+
+#bookshop-main-content .item .large-image {
+    display: none;
+}
+
+#bookshop-main-content .item .modal .large-image {
+    display: block;
+    position: fixed;
+    top: 100px;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#bookshop-main-content .item .modal .large-image:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: #FFF;
+    position: absolute;
+    top: -100px;
+}
+
+#bookshop-main-content .item .modal .large-image .close {
+    background-image: url(../img/close.png);
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(198,197,197);
+    border-radius: 100%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 50%;
+    top: -40px;
+    margin-right: -130px;
+}
+
+#bookshop-main-content .item .modal .large-image img {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -130px;
+}
+
+#bookshop-main-content .item .book-description {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#bookshop-main-content .item .book-description .red-bar {
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #FF0000;
+}
+
+#bookshop-main-content .item .book-description .author-name {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 15px;
+    margin: 12px 0px 9px 0px;
+}
+
+#bookshop-main-content .item .book-description table {
+    width: 100%;
+}
+
+#bookshop-main-content .item .book-description tr td {
+    width: 50%;
+    font-size: 13px;
+    line-height: 13px;
+    color: rgb(140, 107, 102);
+    font-weight: 200;
+    font-style: italic;
+}
+
+#bookshop-main-content .item .book-description table tr td.left-td {
+    text-align: right;
+    padding-right: 4px;
+}
+
+#bookshop-main-content .item .book-description table tr td.right-td {
+    text-align: left;
+    padding-left: 4px;
+}
+
+#bookshop-main-content .item .book-description table .right-td a,
+#bookshop-main-content .item .book-description table .right-td a:hover {
+    display: inline-block;
+    border-bottom: 1px dashed #FF0000;
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.bookshop-footer {
+    order: 3;
+    width: 100%;
+    height: 104px;
+    clear: both;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 450px) {
+    #bookshop-main-content .item .modal .large-image img {
+        width: 320px;
+        margin-left: -160px;
+    }
+
+    #bookshop-main-content .item .modal .large-image .close {
+        margin-right: -200px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    #bookshop-main-content {
+        width: 486px;
+        padding-top: 7px;
+    }
+
+    #bookshop-main-content .item .item-number {
+        margin-left: -15px;
+    }
+
+    #bookshop-main-content .item .small-image {
+        float: left;
+        margin-left: 22px;
+    }
+
+    #bookshop-main-content .item .modal .large-image img {
+        width: 360px;
+        margin-left: -180px;
+    }
+
+    #bookshop-main-content .item .modal .large-image .close {
+        margin-right: -220px;
+    }
+
+    #bookshop-main-content .item .book-description {
+        float: right;
+        width: 50%;
+        padding-top: 38px;
+    }
+
+    #bookshop-main-content .item .book-description .book-title {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .bookshop-header .header-wrap,
+    .bookshop-navig-aside {
+        max-width: 760px;
+    }
+
+    #bookshop-main-content {
+        display: -ms-grid;
+        -ms-grid-columns: auto 20px auto;
+        -ms-grid-rows: auto auto auto;
+
+        width: 696px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        padding-top: 0px;
+    }
+
+    #bookshop-main-content .item .item-number {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    #bookshop-main-content .item .small-image {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #bookshop-main-content .item .book-description {
+        float: none;
+        width: 100%;
+        padding-top: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-wrap {
+        display: block;
+    }
+
+    .bookshop-header .header-wrap {
+        max-width: 1024px;
+    }
+
+    #bookshop-main-content .item .item-number {
+        margin-left: 0px;
+    }
+
+    .bookshop-navig-aside  {
+        width: 186px;
+        padding: 0;
+        position: absolute;
+        top: 104px;
+        left: 50%;
+        margin-left: -472px;
+    }
+
+    #bookshop-main-content {
+        width: 960px;
+        padding: 3px 0px 3px 243px;
+    }
+
+    #bookshop-main-content .item .book-description .book-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1580px) {
+    .bookshop-header .header-wrap {
+        max-width: 1580px;
+    }
+
+    .bookshop-navig-aside  {
+        margin-left: -750px;
+    }
+
+    #bookshop-main-content {
+        grid-template-columns: auto 20px auto 20px auto;
+        -ms-grid-rows: auto auto;
+
+        width: 1516px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3px 243px;
+    }
+}

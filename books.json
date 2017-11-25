@@ -1,0 +1,68 @@
+[
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/dolores-claiborne-b-iext43631817.jpg",
+      "small": "http://ecsmedia.pl/c/dolores-claiborne-b-iext43631817.jpg"
+    },
+    "title": "Dolores Claiborne",
+    "author": "Stephan King",
+    "releaseDate": "08/2014",
+    "pages": 256,
+    "link": "http://www.empik.com/dolores-claiborne-king-stephen,p1098813613,ksiazka-p"
+  },
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/saga-o-fjallbace-tom-10-czarownica-b-iext51051187.jpg",
+      "small": "http://ecsmedia.pl/c/saga-o-fjallbace-tom-10-czarownica-b-iext51051187.jpg"
+    },
+    "title": "Czarownica. Saga o Fjallbace. Tom 10",
+    "author": "Camilla Lackberg",
+    "releaseDate": "01/2017",
+    "pages": 518,
+    "link": "http://www.empik.com/saga-o-fjallbace-tom-10-czarownica-lackberg-camilla,p1161483033,ksiazka-p"
+  },
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/bialowieza-szeptem-historie-z-puszczy-bialowieskiej-b-iext51633104.jpg",
+      "small": "http://ecsmedia.pl/c/bialowieza-szeptem-historie-z-puszczy-bialowieskiej-b-iext51633104.jpg"
+    },
+    "title": "Białowieża szeptem. Historie z Puszczy Białowieskiej",
+    "author": "Anna Kamińska",
+    "releaseDate": "11/2017",
+    "pages": 272,
+    "link": "http://www.empik.com/bialowieza-intymnie-historie-z-puszczy-bialowieskiej-kaminska-anna,p1163859133,ksiazka-p"
+  },
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/komisarz-forst-tom-1-ekspozycja-b-iext41791300.jpg",
+      "small": "http://ecsmedia.pl/c/komisarz-forst-tom-1-ekspozycja-b-iext41791300.jpg"
+    },
+    "title": "Ekspozycja",
+    "author": "Remigiusz Mróz",
+    "releaseDate": "08/2015",
+    "pages": 254,
+    "link": "http://www.empik.com/ekspozycja-mroz-remigiusz,p1109890688,ksiazka-p"
+  },
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/uniwersum-metro-2033-otchlan-b-iext40215110.jpg",
+      "small": "http://ecsmedia.pl/c/uniwersum-metro-2033-otchlan-b-iext40215110.jpg"
+    },
+    "title": "Otchłań. Uniwersum Metro 2033",
+    "author": "R.J. Szmidt",
+    "releaseDate": "07/2014",
+    "pages": 384,
+    "link": "http://www.empik.com/otchlan-uniwersum-metro-2033-szmidt-robert-j,p1109834123,ksiazka-p"
+  },
+  {
+    "cover": {
+      "large": "http://ecsmedia.pl/c/harry-potter-tom-2-harry-potter-i-komnata-tajemnic-wydanie-ilustrowane-b-iext44782357.jpg",
+      "small": "http://ecsmedia.pl/c/harry-potter-tom-2-harry-potter-i-komnata-tajemnic-wydanie-ilustrowane-b-iext44782357.jpg"
+    },
+    "title": "Harry Potter i Komnata Tajemnic",
+    "author": "J.K. Rowling",
+    "releaseDate": "07/1998",
+    "pages": 474,
+    "link": "http://www.empik.com/harry-potter-i-komnata-tajemnic-rowling-j-k,p1129683235,ksiazka-p"
+  }
+]

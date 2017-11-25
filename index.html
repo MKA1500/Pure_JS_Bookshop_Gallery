@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Książki o Javascript</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
-</header>
-<main>
-    <div class="row">
-        <input type="text" id="textValue">
-        <input type="button" value="Add To Array" id="addToArray" class="btn">
-    </div>
-    <div class="row">
-        <input type="button" value="Show Array" id="showArrayButton" class="btn">
-        <input type="button" value="Hide Array Items" id="hideArrayItemsButton" class="btn">
-        <div id="ResultsDiv"></div>
-    </div>
-    <p id="itemsCounter"></p>
-</main>
-<footer>
-</footer>
+<div class="page-wrap">
+    <header class="bookshop-header">
+        <div class="header-wrap">
+            <span class="square"></span>
+            <h1>Bookshop</h1>
+        </div>
+    </header>
+    <main id="bookshop-main-content"></main>
+    <aside class="bookshop-navig-aside">
+        <h2>Sort by:</h2>
+        <ul>
+            <li>
+                <span class="pseudo-radio"></span>
+                <input name="sort" type="radio" id="sort-pages">
+                <span class="navig-label">number of pages</span>
+            </li>
+            <li>
+                <span class="pseudo-radio"></span>
+                <input name="sort" type="radio" id="sort-date">
+                <span class="navig-label">release date</span>
+            </li>
+            <li>
+                <span class="pseudo-radio"></span>
+                <input name="sort" type="radio" id="sort-author">
+                <span class="navig-label">author's name</span>
+            </li>
+        </ul>
+        <h2>Show only:</h2>
+        <div class="select-pages">
+            <p>over <input type="text" id="input-pages"> pages</p>
+            <span id="alert"></span>
+        </div>
+        <div class="for-cleaning-filters">
+            <button id="clean-filters">Clear filters</button>
+            <button id="reload-page">Reload Page</button>
+        </div>
+    </aside>
+    <footer class="bookshop-footer">
+    </footer>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
